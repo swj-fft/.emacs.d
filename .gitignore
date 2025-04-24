@@ -1,0 +1,7 @@
+.lsp-session*
+auto-save-list/
+backups/
+custom.el
+elpa/
+quelpa/
+transient/
