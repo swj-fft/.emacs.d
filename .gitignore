@@ -1,7 +1,11 @@
+.cache
 .lsp-session*
 auto-save-list/
 backups/
 custom.el
 elpa/
+eshell/
+projectile-bookmarks.eld
+projects.eld
 quelpa/
 transient/
