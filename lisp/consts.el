@@ -18,6 +18,19 @@
     "bazel-*") ; Bazel-related files
   "List of file patterns to exclude from indexing and navigation.")
 
+(defun qiang-comment-dwim-line (&optional arg)
+  "Replacement for the comment-dwim command.
+If no region is selected and current line is not blank and we are not at the end of the line,
+then comment current line.
+Replaces default behaviour of comment-dwim, when it inserts comment at the end of the line."
+  (interactive "*P")
+  (comment-normalize-vars)
+  (if (not (region-active-p))
+      (comment-or-uncomment-region (line-beginning-position) (line-end-position))
+    (comment-dwim arg)))
+
+(global-set-key "\M-;" 'qiang-comment-dwim-line)
+
 (delete-selection-mode 1)
 
 ;; General settings
@@ -39,6 +52,5 @@
 ;; Performance tweaks
 (setq gc-cons-threshold 100000000)
 (setq read-process-output-max (* 1024 1024))
-
 
 (provide 'consts)
