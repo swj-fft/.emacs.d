@@ -69,4 +69,4 @@ otherwise, use switch-to-buffer."
 (global-set-key (kbd "C-x C-b") 'my/smart-switch-buffer)
 
 (provide 'keybindings)
-;;; keybindings.el ends here
+
