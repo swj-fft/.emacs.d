@@ -68,5 +68,8 @@ otherwise, use switch-to-buffer."
 ;; 绑定 C-x C-b 到自定义函数
 (global-set-key (kbd "C-x C-b") 'my/smart-switch-buffer)
 
+;; eshell
+(global-set-key (kbd "C-'") 'eshell)
+
 (provide 'keybindings)
 
