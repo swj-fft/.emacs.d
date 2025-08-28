@@ -98,5 +98,6 @@
 (require 'bazel-conf)
 (require 'completion-conf)
 (require 'format-conf)
+(require 'move-text-conf)
 
 (provide 'packages)
