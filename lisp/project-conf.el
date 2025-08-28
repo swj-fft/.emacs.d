@@ -54,6 +54,7 @@
 
   ;; 可选：启用 follow-mode 自动跟踪当前文件
   (treemacs-follow-mode t)
+  (add-hook 'treemacs-mode-hook (lambda() (display-line-numbers-mode -1)))
 
   ;; 全局键绑定，适用于任何缓冲区
   :bind
