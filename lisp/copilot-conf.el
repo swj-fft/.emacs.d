@@ -13,6 +13,11 @@
   :config
   (setq copilot-node-executable "/usr/bin/node") ; 设置 Node.js 可执行文件路径
   (setq copilot-max-char -1) ; 禁用字符限制（默认 -1 表示无限制）
-  (setq copilot-auto-complete t)) ; 启用自动补全
+  (setq copilot-auto-complete t)  ; 启用自动补全
+  (add-to-list 'copilot-indentation-alist '(prog-mode 2))
+  (add-to-list 'copilot-indentation-alist '(text-mode 2))
+  (add-to-list 'copilot-indentation-alist '(emacs-lisp-mode 2))
+  (add-to-list 'copilot-indentation-alist '(c++-mode 2))
+  )
 
 (provide 'copilot-conf)
